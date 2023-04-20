@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gatitos aleatorios</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <h1>Kitty app</h1>
+  </header>
+
+    <span id="error"></span>
+
+    <section id="randomMichis">
+      <h2>Radom kitties</h2>
+
+      <div class="parent">
+      <article class="div1">
+        <div class="fg">
+          <img class="image" id="img1" alt="Foto gatito aleatorio">
+        </div>
+        <button class="btn" id="btn1" onclick="saveFavouriteMichis()">
+          Save to favorites
+        </button>
+      </article>
+  
+      <article class="div2">
+        <div class="fg">
+          <img class="image" id="img2"  alt="Foto gatito aleatorio">
+        </div>
+        <button class="btn" id="btn2" onclick="saveFavouriteMichis()">
+          Save to favorites
+        </button>
+      </article>
+
+      <article class="div3">
+        <div class="fg">
+          <img class="image" id="img3" alt="Foto gatito aleatorio">
+        </div>
+        <button class="btn" id="btn3" onclick="saveFavouriteMichis()">
+          Save to favorites
+        </button>
+      </article>
+
+      <article class="div4">
+        <div class="fg">
+          <img class="image" id="img4" alt="Foto gatito aleatorio">
+        </div>
+        <button class="btn" id="btn4" onclick="saveFavouriteMichis()">
+          Save to favorites
+        </button>
+      </article>
+    </div>
+      <button class="reload-btn" onclick="loadRandomMichis()">Reload</button>
+    </section>
+
+    <h2>Favorite cats</h2>
+    <section id="favoriteMichis">
+      <article>
+        <img class="image" id="img1" alt="Foto gatito aleatorio">
+        <button> Delete from favorites</button>
+      </article>
+    </section>
+
+    <section id="uploadingMichi">
+      <h2>Upload your cat's picture</h2>
+
+      <form id="uploadingForm">
+        <input id="file" type="file" name="file"/><!--RETO: poner previsualizacion del archivo antes de subirlo-->
+        <button type="button" class="upload-btn" onclick="uploadMichiPhoto()">Upload cat's picture</button>
+      </form>
+    </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+
+</div>
+</div>
+</body>
+</html>
